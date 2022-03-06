@@ -8,7 +8,7 @@ Suite Teardown  Close browser
 
 *** Test Cases ***
 
-Incomplete fill-out
+Password no match
     Go to register page
     Enter company information
     Go to contact page
@@ -19,6 +19,7 @@ Incomplete fill-out
     Enter text in element  ${repeat_password}  Testtest2!
     Wait Until Element Is Visible  ${nextBtn}
     Click Element  ${nextBtn}
+    Sleep  1s
     ${email_class}=  Get class  ${email}
     ${lastname_class}=  Get class  ${lastname}
     ${firstname_class}=  Get class  ${firstname}
