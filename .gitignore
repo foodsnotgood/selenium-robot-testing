@@ -1,0 +1,7 @@
+.idea
+*.iml
+
+**/reports/*.xml
+**/reports/*.html
+**/reports/*.png
+
