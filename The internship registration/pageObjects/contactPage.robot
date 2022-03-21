@@ -43,3 +43,10 @@ Get error message
     Wait until Element Is Visible  ${error_field}
     ${message}=  Get Text  ${error_field}
     [Return]  ${message}
+
+Clear input fields
+    Clear Element Text  ${email}
+    Clear Element Text  ${lastname}
+    Clear Element Text  ${firstname}
+    Clear Element Text  ${password}
+    Clear Element Text  ${repeat_password}
